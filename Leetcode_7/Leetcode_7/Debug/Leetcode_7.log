@@ -1,0 +1,5 @@
+﻿  Leetcode_7.cpp
+e:\programming\vs2015\leetcode_7\leetcode_7\leetcode_7.cpp(49): warning C4305: “参数”: 从“__int64”到“int”截断
+e:\programming\vs2015\leetcode_7\leetcode_7\leetcode_7.cpp(49): warning C4309: “参数”: 截断常量值
+  Leetcode_7.vcxproj -> E:\programming\vs2015\Leetcode_7\Debug\Leetcode_7.exe
+  Leetcode_7.vcxproj -> E:\programming\vs2015\Leetcode_7\Debug\Leetcode_7.pdb (Partial PDB)
