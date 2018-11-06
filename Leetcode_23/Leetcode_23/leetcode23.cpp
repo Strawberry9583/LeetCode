@@ -1,3 +1,17 @@
+//Merge k sorted linked lists and return it as one sorted list.Analyze and describe its complexity.
+//
+//Example:
+//
+//Input:
+//[
+//	1->4->5,
+//	1->3->4,
+//	2->6
+//]
+//Output : 1->1->2->3->4->4->5->6
+
+
+
 #include<iostream>
 #include<algorithm>
 #include<vector>
@@ -48,7 +62,7 @@ public:
 			return lists[0];
 		}
 		while (lists.size()!=1) {
-			//size_num is odd;
+			//size_num is odd; calculate the pair num of the lists;
 			size_t pair_num = lists.size() / 2;
 			//size_num is even;
 			if (lists.size() & 1 == 1) {
@@ -60,11 +74,11 @@ public:
 					vec_list.push_back(*lists.rbegin());
 					break;
 				}
+				//select two list to sort;
 				size_t idx_left = 2 * i, idx_right = idx_left + 1;
 				vec_list.push_back(mergeTwoLists(lists[idx_left], lists[idx_right]));
 			}
 			lists = vec_list;
-
 		}
 		return lists[0];
 	}
