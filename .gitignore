@@ -247,13 +247,5 @@ ModelManifest.xml
 *.d
 obj/
 x64/
-*.vcxproj*
-*.filters
-*.vcxproj
-*.vcxproj
-*.filters
-OFEC.vcxproj.filters
-*.vcxproj
-*.filters
 # edit test
 result/
