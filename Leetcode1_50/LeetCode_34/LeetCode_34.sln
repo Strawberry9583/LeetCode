@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCode_34", "LeetCode_34\LeetCode_34.vcxproj", "{6A5CD3BC-4ADC-4608-B09C-7B78DBDA46F6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCode_34", "LeetCode_34.vcxproj", "{6A5CD3BC-4ADC-4608-B09C-7B78DBDA46F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +26,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9A532D52-3810-4D04-A192-849AEE6F1FED}
+		SolutionGuid = {870B78A5-BF50-4ABC-9073-9DDC8B30B289}
 	EndGlobalSection
 EndGlobal
