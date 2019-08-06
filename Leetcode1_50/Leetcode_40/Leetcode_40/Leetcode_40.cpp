@@ -76,11 +76,47 @@ public:
 	}
 };
 
+//method2:
+class Solution2 {
+public:
+	vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+		vector<vector<int>> res;
+		if (candidates.empty())
+			return res;
+		vector<int> currList;
+		sort(candidates.begin(), candidates.end(), less<int>());
+		helper(res, currList, candidates, target, 0);
+		return res;
+	}
+
+	void helper(vector<vector<int>>& res, vector<int>& currList, const vector<int>& candidates, int target, int startIdx) {
+		if (target < 0)
+			return;
+		if (target == 0) {
+			res.push_back(currList);
+			return;
+		}
+
+		for (int i = startIdx; i < candidates.size(); i++) {
+			//cout << "i: " << i << ", startIdx: " << startIdx << ", candidates[i]: " << candidates[i] << endl; 
+			
+			//if i==starIdx && candidates[i]==candidates[i-1], then escape the startIdx=i;
+			//because the canditates[i-1] have been tried.
+			if (i != startIdx && candidates[i] == candidates[i - 1]) continue;
+			currList.push_back(candidates[i]);
+			//cout << "added " << i << "th element: " << candidates[i] << endl;
+			helper(res, currList, candidates, target - candidates[i], i + 1);
+			currList.pop_back();
+		}
+	}
+};
+
+
 
 int main() {
 	vector<int> test{ 10,1,2,7,6,1,5 };
 	Solution sol;
-	auto result = sol.combinationSum(test, 8);
+	auto result = sol.combinationSum2(test, 8);
 
 
 	cin.get();
