@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day11_flood_fill", "Day11_flood_fill\Day11_flood_fill.vcxproj", "{17020BA2-D7C1-4E65-8E3D-8F5A5C44B77C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17020BA2-D7C1-4E65-8E3D-8F5A5C44B77C}.Debug|x64.ActiveCfg = Debug|x64
+		{17020BA2-D7C1-4E65-8E3D-8F5A5C44B77C}.Debug|x64.Build.0 = Debug|x64
+		{17020BA2-D7C1-4E65-8E3D-8F5A5C44B77C}.Debug|x86.ActiveCfg = Debug|Win32
+		{17020BA2-D7C1-4E65-8E3D-8F5A5C44B77C}.Debug|x86.Build.0 = Debug|Win32
+		{17020BA2-D7C1-4E65-8E3D-8F5A5C44B77C}.Release|x64.ActiveCfg = Release|x64
+		{17020BA2-D7C1-4E65-8E3D-8F5A5C44B77C}.Release|x64.Build.0 = Release|x64
+		{17020BA2-D7C1-4E65-8E3D-8F5A5C44B77C}.Release|x86.ActiveCfg = Release|Win32
+		{17020BA2-D7C1-4E65-8E3D-8F5A5C44B77C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42D444E8-5A8D-44C1-B550-0A32D3A4EF65}
+	EndGlobalSection
+EndGlobal
