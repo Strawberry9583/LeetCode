@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day27_possible_bipartition", "Day27_possible_bipartition\Day27_possible_bipartition.vcxproj", "{4D538289-85FD-486F-9D98-3ABF112EF3EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D538289-85FD-486F-9D98-3ABF112EF3EC}.Debug|x64.ActiveCfg = Debug|x64
+		{4D538289-85FD-486F-9D98-3ABF112EF3EC}.Debug|x64.Build.0 = Debug|x64
+		{4D538289-85FD-486F-9D98-3ABF112EF3EC}.Debug|x86.ActiveCfg = Debug|Win32
+		{4D538289-85FD-486F-9D98-3ABF112EF3EC}.Debug|x86.Build.0 = Debug|Win32
+		{4D538289-85FD-486F-9D98-3ABF112EF3EC}.Release|x64.ActiveCfg = Release|x64
+		{4D538289-85FD-486F-9D98-3ABF112EF3EC}.Release|x64.Build.0 = Release|x64
+		{4D538289-85FD-486F-9D98-3ABF112EF3EC}.Release|x86.ActiveCfg = Release|Win32
+		{4D538289-85FD-486F-9D98-3ABF112EF3EC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01AEB1FA-E0F4-437B-A06D-8CD9E9E44C5A}
+	EndGlobalSection
+EndGlobal

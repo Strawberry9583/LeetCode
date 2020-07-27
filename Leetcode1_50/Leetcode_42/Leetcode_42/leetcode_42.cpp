@@ -1,46 +1,36 @@
-#include<string>
+#include<iostream>
 #include<vector>
 #include<algorithm>
-
 using namespace std;
-
 
 class Solution {
 public:
-	bool rotateString(string A, string B) {
-		if (A.size() != B.size()) {
-			return false;
+	int trap(vector<int>& height) {
+		if (height.size()<3)
+			return 0;
+		int ans = 0;
+		int size = height.size();
+		vector<int> left_max(size), right_max(size);
+		left_max[0] = height[0];
+		for (int i = 1; i < size; i++) {
+			left_max[i] = max(height[i], left_max[i - 1]);
 		}
-		//if (A == B) {
-		//	return true;
-		//}
-		std::vector<int> all_idx_begin;
-		for (int i = 0; i < B.size();) {
-			int idx= B.find( A[0],i);
-			if ( idx!=std::string::npos) {
-				all_idx_begin.emplace_back(idx);
-				i = idx + 1;
-			}
-			else {
-				break;
-			}
+		right_max[size - 1] = height[size - 1];
+		for (int i = size - 2; i >= 0; i--) {
+			right_max[i] = max(height[i], right_max[i + 1]);
 		}
-		//string temp = B.substr(5);
-		for (auto & begin_idx : all_idx_begin) {
-			string temp_str = B.substr(begin_idx);
-			temp_str += B.substr(0, begin_idx);
-			if (temp_str == A) {
-				return true;
-			}
+		for (int i = 1; i < size - 1; i++) {
+			ans += min(left_max[i], right_max[i]) - height[i];
 		}
-		return false;
+		return ans;
 	}
 };
 
+
 int main() {
-
 	Solution sol;
-	sol.rotateString("", "");
+	std::vector<int> vec = { 5,2,1,2,1,5};
+	std::cout << sol.trap(vec) << std::endl;
 
-	return 0;
+	std::cin.get();
 }

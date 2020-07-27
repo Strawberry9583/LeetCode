@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day11_sort_colors", "Day11_sort_colors\Day11_sort_colors.vcxproj", "{9042FAFC-68AE-4135-B674-A08F1160C2FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9042FAFC-68AE-4135-B674-A08F1160C2FE}.Debug|x64.ActiveCfg = Debug|x64
+		{9042FAFC-68AE-4135-B674-A08F1160C2FE}.Debug|x64.Build.0 = Debug|x64
+		{9042FAFC-68AE-4135-B674-A08F1160C2FE}.Debug|x86.ActiveCfg = Debug|Win32
+		{9042FAFC-68AE-4135-B674-A08F1160C2FE}.Debug|x86.Build.0 = Debug|Win32
+		{9042FAFC-68AE-4135-B674-A08F1160C2FE}.Release|x64.ActiveCfg = Release|x64
+		{9042FAFC-68AE-4135-B674-A08F1160C2FE}.Release|x64.Build.0 = Release|x64
+		{9042FAFC-68AE-4135-B674-A08F1160C2FE}.Release|x86.ActiveCfg = Release|Win32
+		{9042FAFC-68AE-4135-B674-A08F1160C2FE}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7F726820-4160-4BE9-8E00-EE075866F026}
+	EndGlobalSection
+EndGlobal

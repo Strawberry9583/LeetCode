@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day14_cheapest_flights_with_k_stops", "Day14_cheapest_flights_with_k_stops\Day14_cheapest_flights_with_k_stops.vcxproj", "{41D2F15C-F1FB-4B76-BB88-A39C2A0A46AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41D2F15C-F1FB-4B76-BB88-A39C2A0A46AF}.Debug|x64.ActiveCfg = Debug|x64
+		{41D2F15C-F1FB-4B76-BB88-A39C2A0A46AF}.Debug|x64.Build.0 = Debug|x64
+		{41D2F15C-F1FB-4B76-BB88-A39C2A0A46AF}.Debug|x86.ActiveCfg = Debug|Win32
+		{41D2F15C-F1FB-4B76-BB88-A39C2A0A46AF}.Debug|x86.Build.0 = Debug|Win32
+		{41D2F15C-F1FB-4B76-BB88-A39C2A0A46AF}.Release|x64.ActiveCfg = Release|x64
+		{41D2F15C-F1FB-4B76-BB88-A39C2A0A46AF}.Release|x64.Build.0 = Release|x64
+		{41D2F15C-F1FB-4B76-BB88-A39C2A0A46AF}.Release|x86.ActiveCfg = Release|Win32
+		{41D2F15C-F1FB-4B76-BB88-A39C2A0A46AF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {222A1B68-70A4-496D-8166-A831FE487499}
+	EndGlobalSection
+EndGlobal
