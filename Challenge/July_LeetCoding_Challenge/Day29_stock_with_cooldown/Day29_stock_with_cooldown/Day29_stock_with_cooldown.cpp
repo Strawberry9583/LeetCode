@@ -2,7 +2,7 @@
 #include<vector>
 #include<string>
 #include<algorithm>
-
+#include<unordered_set>
 using namespace std;
 
 
@@ -81,6 +81,8 @@ public:
 		return max({ s0[prices.size() - 1],s1[prices.size()-1], s2[prices.size() - 1] });
 	}
 };
+
+
 
 int main() {
 	std::vector<int> test_vec{ 1,2,3,0,2};
