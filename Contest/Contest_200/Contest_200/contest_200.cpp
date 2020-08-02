@@ -70,11 +70,12 @@ public:
 	}
 };
 
-
+// calc the number of zero in the leftmost of each rows;
+// then find swap with row by row until find the row with enough leftmost zeros;
 class Solution3 {
 public:
 	int minSwaps(vector<vector<int>>& grid) {
-		std::vector<pair<int, int>> idx_zerolenght(grid.size(), std::pair<int, int>(0, 0));
+		std::vector<int> idx_zerolength(grid.size(), 0);
 		for (int row = 0; row < grid.size(); ++row) {
 			int col = grid.size() - 1;
 			for (; col >= 0; --col) {
@@ -82,26 +83,23 @@ public:
 					break;
 				}
 			}
-			idx_zerolenght[row].first = row;
-			idx_zerolenght[row].second = grid.size() - 1 - col;
+			idx_zerolength[row] = grid.size() - 1 - col;
 		}
-		std::vector<std::vector<int>> distance_matrix(grid.size(), std::vector<int>(grid.size(), 40001));
-		for (int row_idx = 0; row_idx < grid.size()-1; ++row_idx) {
-			int needed_zero = grid.size() - row_idx-1;
-			for (int exchange_idx = 0; exchange_idx < grid.size(); ++exchange_idx) {
-				if (idx_zerolenght[exchange_idx].second >= needed_zero) {
-					distance_matrix[row_idx][exchange_idx] = 1;
-				}
+		int result = 0;
+		for (int row_idx = 0; row_idx < grid.size() - 1; ++row_idx) {
+			int needed_zero = grid.size() - row_idx - 1;
+			int exchange_idx = row_idx + 1;
+			for (; exchange_idx < grid.size()&& idx_zerolength[row_idx] < needed_zero; ++exchange_idx) {
+				std::swap(idx_zerolength[row_idx], idx_zerolength[exchange_idx]);
+				++result;
 			}
+			if (idx_zerolength[row_idx] < needed_zero) {
+				result = -1;
+				break;
+			}
+
 		}
-
-
-		//int size = grid.size();
-		//int left = 0, right = (size*(size - 1) / 2)+1;
-		//while (left<right) {
-		//	int mid = left + (right - left) / 2;
-		//	
-		//}
+		return result;
 	}
 };
 
@@ -109,6 +107,10 @@ int main() {
 	//std::vector<int> test_vec{ 1,25,35,42,68,70 };
 	//int k = 2;
 	//std::cout << Solution2().getWinner(test_vec, k);
+
+	std::vector<std::vector<int>> grid = {{0, 0, 1}, {1, 1, 0}, {1, 0, 0}};
+	std::cout << Solution3().minSwaps(grid);
+
 	cin.get();
 	return 0;
 }
