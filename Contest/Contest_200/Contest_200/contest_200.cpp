@@ -103,13 +103,17 @@ public:
 	}
 };
 
+
 int main() {
 	//std::vector<int> test_vec{ 1,25,35,42,68,70 };
 	//int k = 2;
 	//std::cout << Solution2().getWinner(test_vec, k);
 
-	std::vector<std::vector<int>> grid = {{0, 0, 1}, {1, 1, 0}, {1, 0, 0}};
-	std::cout << Solution3().minSwaps(grid);
+	//std::vector<std::vector<int>> grid = {{0, 0, 1}, {1, 1, 0}, {1, 0, 0}};
+	//std::cout << Solution3().minSwaps(grid);
+
+
+
 
 	cin.get();
 	return 0;
