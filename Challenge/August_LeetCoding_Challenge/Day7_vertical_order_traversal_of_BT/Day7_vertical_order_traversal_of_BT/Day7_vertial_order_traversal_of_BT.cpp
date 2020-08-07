@@ -17,6 +17,9 @@ using namespace std;
       TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  };
  
+
+// traverse the nodes and store the position of every node;
+// then sort the node according to their positions and values;
 class Solution {
 public:
 	vector<vector<int>> verticalTraversal(TreeNode* root) {
