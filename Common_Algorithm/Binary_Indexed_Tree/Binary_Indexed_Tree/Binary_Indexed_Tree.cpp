@@ -18,6 +18,8 @@ public:
 	binary_indexed_tree(int size) :m_BITree(size,0) {
 		
 	}
+	// get the sum of arr[0]+arr[1]+...+arr[index];
+	//@Param: index is last index of the sum interval;
 	int getSum(int index) {
 		int sum = 0;
 		//the first pos stores a zero;
@@ -29,6 +31,8 @@ public:
 		return sum;
 	}
 
+	// update the arr[index] to arr[index]+val;
+	//@Param: n is the size of arr; index is the updated element's index; val is the change value of arr[index];
 	void updateTree(int n, int index, int val) {
 		//the first pos stores a zero;
 		index = index + 1;
@@ -47,7 +51,7 @@ int main() {
 	for (int idx = 0; idx < test_vec.size(); ++idx) {
 		tree.updateTree(test_vec.size(), idx, test_vec[idx]);
 	}
-	std::cout << tree.getSum(3);
+	std::cout << tree.getSum(2);
 
 	cin.get();
 	return 0;
