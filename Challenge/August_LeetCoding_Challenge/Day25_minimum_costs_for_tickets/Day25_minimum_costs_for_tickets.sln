@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day25_minimum_costs_for_tickets", "Day25_minimum_costs_for_tickets\Day25_minimum_costs_for_tickets.vcxproj", "{37FE24A3-AD98-431C-8A81-CD0C2E800287}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37FE24A3-AD98-431C-8A81-CD0C2E800287}.Debug|x64.ActiveCfg = Debug|x64
+		{37FE24A3-AD98-431C-8A81-CD0C2E800287}.Debug|x64.Build.0 = Debug|x64
+		{37FE24A3-AD98-431C-8A81-CD0C2E800287}.Debug|x86.ActiveCfg = Debug|Win32
+		{37FE24A3-AD98-431C-8A81-CD0C2E800287}.Debug|x86.Build.0 = Debug|Win32
+		{37FE24A3-AD98-431C-8A81-CD0C2E800287}.Release|x64.ActiveCfg = Release|x64
+		{37FE24A3-AD98-431C-8A81-CD0C2E800287}.Release|x64.Build.0 = Release|x64
+		{37FE24A3-AD98-431C-8A81-CD0C2E800287}.Release|x86.ActiveCfg = Release|Win32
+		{37FE24A3-AD98-431C-8A81-CD0C2E800287}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02FCA9D2-E7B6-4D36-8C17-FBC840948C0A}
+	EndGlobalSection
+EndGlobal
