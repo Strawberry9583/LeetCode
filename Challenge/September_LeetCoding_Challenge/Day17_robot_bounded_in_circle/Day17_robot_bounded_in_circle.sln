@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day17_robot_bounded_in_circle", "Day17_robot_bounded_in_circle\Day17_robot_bounded_in_circle.vcxproj", "{E93D470A-726E-4CA1-AE82-DD815E308B9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E93D470A-726E-4CA1-AE82-DD815E308B9A}.Debug|x64.ActiveCfg = Debug|x64
+		{E93D470A-726E-4CA1-AE82-DD815E308B9A}.Debug|x64.Build.0 = Debug|x64
+		{E93D470A-726E-4CA1-AE82-DD815E308B9A}.Debug|x86.ActiveCfg = Debug|Win32
+		{E93D470A-726E-4CA1-AE82-DD815E308B9A}.Debug|x86.Build.0 = Debug|Win32
+		{E93D470A-726E-4CA1-AE82-DD815E308B9A}.Release|x64.ActiveCfg = Release|x64
+		{E93D470A-726E-4CA1-AE82-DD815E308B9A}.Release|x64.Build.0 = Release|x64
+		{E93D470A-726E-4CA1-AE82-DD815E308B9A}.Release|x86.ActiveCfg = Release|Win32
+		{E93D470A-726E-4CA1-AE82-DD815E308B9A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CE028F1-B28D-4467-8C50-A996D9FF9701}
+	EndGlobalSection
+EndGlobal
