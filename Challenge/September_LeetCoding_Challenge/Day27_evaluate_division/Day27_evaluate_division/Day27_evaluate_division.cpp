@@ -26,7 +26,7 @@ public:
 		for (int idx = 0; idx < equations.size(); ++idx) {
 			int start = str2idx[equations[idx][0]], end = str2idx[equations[idx][1]];
 			graph[start].emplace_back(end, values[idx]);
-			graph[end].emplace_back(start, 1.0alues[idx]);
+			graph[end].emplace_back(start, 1.0/values[idx]);
 		}
 		std::vector<double> result(queries.size());
 		for (int idx = 0; idx < result.size(); ++idx) {
