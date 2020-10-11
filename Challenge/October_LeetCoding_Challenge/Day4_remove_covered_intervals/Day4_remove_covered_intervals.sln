@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day4_remove_covered_intervals", "Day4_remove_covered_intervals\Day4_remove_covered_intervals.vcxproj", "{88229A22-0E56-46FE-8AC7-7C376CD3F813}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88229A22-0E56-46FE-8AC7-7C376CD3F813}.Debug|x64.ActiveCfg = Debug|x64
+		{88229A22-0E56-46FE-8AC7-7C376CD3F813}.Debug|x64.Build.0 = Debug|x64
+		{88229A22-0E56-46FE-8AC7-7C376CD3F813}.Debug|x86.ActiveCfg = Debug|Win32
+		{88229A22-0E56-46FE-8AC7-7C376CD3F813}.Debug|x86.Build.0 = Debug|Win32
+		{88229A22-0E56-46FE-8AC7-7C376CD3F813}.Release|x64.ActiveCfg = Release|x64
+		{88229A22-0E56-46FE-8AC7-7C376CD3F813}.Release|x64.Build.0 = Release|x64
+		{88229A22-0E56-46FE-8AC7-7C376CD3F813}.Release|x86.ActiveCfg = Release|Win32
+		{88229A22-0E56-46FE-8AC7-7C376CD3F813}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D936B4C-27C8-43AB-BD81-7CF93223E0F7}
+	EndGlobalSection
+EndGlobal
