@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Solution {
+class Solution1 {
 public:
 	int maxDepth(string s) {
 		int result = 0, cur = 0;
@@ -56,13 +56,13 @@ public:
 };
 
 
-class Solution {
+class Solution3_1 {
 public:
 	bool checkPalindromeFormation(string a, string b) {
 		if (checkPalindrome(a) || checkPalindrome(b)) {
 			return true;
 		}
-		if (checkSubPalindrome(a, b)) {
+		if (checkSubPalindrome(a, b)||checkSubPalindrome(b,a)) {
 			return true;
 		}
 		std::reverse(a.begin(), a.end());
@@ -77,19 +77,35 @@ private:
 		int left_size = 1;
 		while (left_size - 1<=s2.size() - left_size) {
 			if (s1[left_size - 1] == s2[s2.size() - left_size]) {
-				//if (left_size - 1 == s2.size() - 1 - left_size||left_size-1==s2.size()-left_size-2) {
-				//	return true;
-				//}
 				if (left_size + left_size + 1 >= s2.size()) {
 					return true;
 				}
 			}
 			else {
-				return false;
+				break;
 			}
 			++left_size;
 		}
-		//return true;
+		int max_length = left_size;
+		bool result = true;
+		while (max_length-1<=s2.size()-max_length) {
+			if (s2[max_length - 1] != s2[s2.size() - max_length]) {
+				result = false;
+				break;
+			}
+			++max_length;
+		}
+		if (result) {
+			return true;
+		}
+		max_length = left_size;
+		while (max_length - 1 <= s2.size() - max_length) {
+			if (s1[max_length - 1] != s1[s2.size() - max_length]) {
+				return false;
+			}
+			++max_length;
+		}
+		return true;
 	}
 	bool checkPalindrome(const string& s) {
 		int left = 0, right = s.size() - 1;
@@ -102,12 +118,31 @@ private:
 	}
 };
 
+class Solution3_2 {
+public:
+	bool isPalindrome(string &s, int i, int j) {
+		while (i < j && s[i] == s[j])
+			++i, --j;
+		return i >= j;
+	}
+	bool check(string &a, string &b) {
+		int i = 0, j = a.size() - 1;
+		while (i < j && a[i] == b[j])
+			++i, --j;
+		return isPalindrome(a, i, j) || isPalindrome(b, i, j);
+	}
+	bool checkPalindromeFormation(string a, string b) {
+		return check(a, b) || check(b, a);
+	}
+
+};
+
 int main() {
 	//std::vector<std::vector<int>> roads = {{0, 1}, {0, 3}, {1, 2}, {1, 3}, {2, 3}, {2, 4}};
 	//int n = 5;
 	//std::cout << Solution2().maximalNetworkRank(n, roads);
-	string a = "pvhmupgqeltozftlmfjjde", b = "yjgpzbezspnnpszebzmhvp";
-	std::cout << Solution().checkPalindromeFormation(a, b);
+	string a = "aejbaalflrmkswrydwdkdwdyrwskmrlfqizjezd", b = "uvebspqckawkhbrtlqwblfwzfptanhiglaabjea";
+	std::cout << Solution3_2().checkPalindromeFormation(a, b);
 	cin.get();
 	return 0;
 }
